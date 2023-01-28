@@ -1,5 +1,5 @@
 export default function () {
-    return fetch('files/notes.json').then(function(response) {
+    return fetch('public/files/notes.json').then(function(response) {
         return response.json();
     }).then(function(notes) {
         let notesNavigationBody = '';
