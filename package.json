@@ -1,5 +1,4 @@
 {
-    "homepage": "https://diegocvieira.github.io/quick-notes",
     "scripts": {
         "watch": "node-sass resources/scss/app.scss public/css/app.css && node-sass -w resources/scss/app.scss public/css/app.css",
         "build": "node-sass resources/scss/app.scss public/css/app.css --output-style compressed"
