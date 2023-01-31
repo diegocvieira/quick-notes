@@ -1,5 +1,5 @@
-import notes from './_notes.js';
-import navigation from './_navigation.js';
+import notes from './notes.js';
+import navigation from './navigation.js';
 import copyClipboard from './copy-clipboard.js';
 
 await notes();
