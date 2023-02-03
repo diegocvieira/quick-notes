@@ -5,17 +5,22 @@ export default function () {
         event.preventDefault();
 
         copy(event);
-        changeIcon();
     }));
 
     function copy(event) {
-        const text = event.currentTarget.nextElementSibling;
+        const text = event.currentTarget.nextElementSibling.nextElementSibling;
         const range = document.createRange();
 
         range.selectNode(text);
         window.getSelection().removeAllRanges();
         window.getSelection().addRange(range);
-        document.execCommand("copy");
+
+        const copySuccessful = document.execCommand('copy');
+
+        if (copySuccessful) {
+            changeIcon();
+        }
+
         window.getSelection().removeAllRanges();
     }
 

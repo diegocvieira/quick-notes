@@ -1,9 +1,20 @@
 {
+    "author": "Quick Notes",
+    "description": "Quick Notes",
+    "version": "1.0.0",
+    "homepage": "https://diegocvieira.github.io/quick-notes/",
+    "private": true,
     "scripts": {
-        "watch": "node-sass resources/scss/app.scss public/css/app.css && node-sass -w resources/scss/app.scss public/css/app.css",
-        "build": "node-sass resources/scss/app.scss public/css/app.css --output-style compressed"
+      "watch": "export NODE_ENV=development && webpack",
+      "build": "export NODE_ENV=production && webpack"
     },
     "dependencies": {
-        "node-sass": "^7.0.3"
+      "css-loader": "6.7.1",
+      "sass-loader": "13.0.2",
+      "webpack": "5.75.0",
+      "webpack-cli": "5.0.1",
+      "mini-css-extract-plugin": "2.7.2",
+      "copy-webpack-plugin": "11.0.0"
     }
-}
+  }
+  
